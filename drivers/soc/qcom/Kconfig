@@ -1355,4 +1355,28 @@ config QCOM_S2D_VENDOR_HOOK
           core kernel and help to do bootloader hibernation specific job.
 	  Enable this if bootloader hibernation is enabled.
 
+config RHODE_DTB
+    depends on ARCH_QCOM
+    default n
+    bool "Rhode DTBs"
+    help
+      Only include Rhode specific DTBs to limit the number that
+      get built during kernel compilation
+
+config HAWAO_DTB
+    depends on ARCH_QCOM
+    default n
+    bool "Hawao DTBs"
+    help
+      Only include Hawao specific DTBs to limit the number that
+      get built during kernel compilation
+
+config DEVON_DTB
+    depends on ARCH_QCOM
+    default n
+    bool "Devon DTBs"
+    help
+      Only include Devon specific DTBs to limit the number that
+      get built during kernel compilation
+
 endmenu

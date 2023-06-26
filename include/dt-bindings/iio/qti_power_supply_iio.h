@@ -150,8 +150,26 @@
 #define PSY_IIO_PARALLEL_BATFET_MODE		0x79
 #define PSY_IIO_PARALLEL_FCC_MAX		0x7a
 
-/* USB */
+/* Misc */
 #define PSY_IIO_MOISTURE_DETECTION_EN		0x7b
+#define PSY_IIO_MMI_OTG_ENABLE                  0x105
+#define PSY_IIO_MMI_PD_VDM_VERIFY               0x117
+#define PSY_IIO_QC3P_REAL_TYPE                  0x10b
+#define PSY_IIO_QC3P_POWER                      0x10c
+#define PSY_IIO_START_DETECTION                 0x10e
+#define PSY_IIO_DETECTION_READY                 0x110
+#define PSY_IIO_QC3P_START_POLICY               0x111
+#define PSY_IIO_START_BC12_DETECTION            0x114
+#define PSY_IIO_DETECTION_BC12_READY            0x115
+#define PSY_IIO_READ_USBIN_VOLTAGE              0x116
+#define PSY_IIO_BC12_CHG_TYPE                   0x118
+#define PSY_IIO_USB_CHARGING_ENABLED            0x10f
+#define PSY_IIO_INPUT_CURRENT_SETTLED           0x10a
+#define PSY_IIO_USB_TERMINATION_ENABLED         0x113
+#define PSY_IIO_BATTERY_DP_DM                   0x10d
+#define PSY_IIO_MMI_CP_INPUT_CURRENT_NOW        0x100
+#define PSY_IIO_MMI_CP_INPUT_VOLTAGE_NOW        0x101
+#define PSY_IIO_CP_CLEAR_ERROR                  0x109
 
 /* BMS */
 #define PSY_IIO_CLEAR_SOH			0x7c

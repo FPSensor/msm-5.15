@@ -115,7 +115,22 @@ KHAJE_BOARDS += \
 		 khajeg-idp-pm8010-overlay.dtbo \
 		 khajeg-idps-display-90hz-overlay.dtbo
 
+dtbo-$(CONFIG_RHODE_DTB) += \
+        khaje-rhode-evt-overlay.dtbo \
+        khaje-rhode-dvt-overlay.dtbo
 
+khaje-rhode-evt-overlay.dtbo-base := khaje-moto-base.dtb
+khaje-rhode-dvt-overlay.dtbo-base := khaje-moto-base.dtb
+
+dtbo-$(CONFIG_HAWAO_DTB) += \
+        khaje-hawao-evt-overlay.dtbo
+
+khaje-hawao-evt-overlay.dtbo-base := khaje-moto-base.dtb
+
+dtbo-$(CONFIG_DEVON_DTB) += \
+        khaje-devon-evt-overlay.dtbo
+
+khaje-devon-evt-overlay.dtbo-base := khaje-moto-base.dtb
 
 bengal-dtb-$(CONFIG_ARCH_KHAJE) += \
         $(call add-overlays, $(KHAJE_BOARDS) ,$(KHAJE_BASE_DTB))
